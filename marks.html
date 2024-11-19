@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Student Marks</h1>
+    
+       <p>Here are the marks in my markbook</p>
+    <table border ="1">
+    <thead>
+        <th>Student ID</th>
+        <th>Subject</th>
+        <th>Mark</th>
+        </thead>
+        <tbody>
+            {% for mark in results%}
+
+            <tr>
+                <td>{{mark['student ID'}}</td>
+                <td>{{mark['subject']}}</td>
+                <td>{{mark['Mark'}}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+</body>

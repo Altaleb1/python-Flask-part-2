@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Student Marks</h1>
+    {% if logged in = True %}
+       <p>Hello , {{name}}. You visited my page at {{time}}</p>
+    {%else%}
+       <p>Please Log in</p>
+       {%endif%}
+    <table border ="1">
+    <thead>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>DOB</th>
+        </thead>
+        <tbody>
+            {% for count in range(5)%}
+
+            <tr>
+                <td>Bobby{{Count}}</td>
+                <td>Bobby</td>
+                <td>Bob</td>
+                <td>3/1/2008</td>
+                <td>{{person{['firstname']}}}</td>
+                <td>{{person{['lastname']}}}</td>
+                <td>{{person{['date of birth']}}}</td>
+                <td>3/1/2008</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+</body>
+</html>
